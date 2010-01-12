@@ -1,0 +1,54 @@
+ka      : ka (ya, yab), kha, cha, ja, jha, ta (ra, sa), nna, tha (ya, yab, ra, va), ttha (na, ya, yab), da, na (ya, yab), pa, pha (nukhta), ba, ma (ya, yab), ya, yab, ra (ya, yab), la (ya, yab), lla, va, ca, sa (tha, va), nukhta (la, sa)
+kha     : kha (ya, yab), tha, na, ma, ya, yab, ra, rra, la, lla, va, ca, sha, sa, ksha, nukhta (sa)
+ga      : ga (ya, yab), gha (rra), cha, chha, ja, ta, tta, dda,  nna, tha, da, dha, na(ya, yab), pa, ba, bha(ra, rra), ma, ya, yab, ra(ya, yab), rra, la (ya, yab), lla, va (ya, yab), ca, sha, sa, nukhta
+gha     : gha, (ya, yab), nna, na (ya, yab), ma, ya, yab, ra, rra, la, lla, va, ca, sha, sa, 
+nga     : ka (tha, ya, yab, ra), kha (ya, yab), ga (ya, yab, ra, rra, la), gha (ya, yab, ra, rra), nga, tha (va), ma, ya, yab,  ksha
+cha     : ga, cha (ya, yab), chha (cha, ba, ra, rra, va), nja, na, pa, pha, bha, ma, ya, yab, ra, rra, la, lla, va, ca, sha, sa, nukhta 
+chha    : cha, chha (ya, yab), na, ma, ya, yab, ra, rra, la, va, sa
+ja      : ga, cha, ja (ba, ya, yab, va, nukhta), jnya, jha, tha, da, dha, na, pa, pha, ba, bha, ma, ya, yab, ra, rra, la, va, ca, sha, sa, nukhta (ja (nukhta))
+jha     : jha (ya, yab), na, ma, ya, yab, ra, rra, la, va, sha, sa
+nja     : ga, cha, chha, ja (cha, ya, yab, va), jha, nja (ya, yab), ddha, pa, ba, ma, ya, yab, rra
+ta      : ka, kha, gha, cha, ja (nukhta), jha, ta (ya, yab), tta (ya, yab), na, tha (ra, rra), pa, ba, ma, ya, yab, ra (ya, yab), rra, la, lla, va, sa(tha)
+tta     : ka, tta (ya, yab), ma, ya, yab, ra, rra, lla, va, 
+dda     : ka, ga, gha (ra), cha, ja, dda (ya, yab), ddha, nna, tha, na, ma, ya, yab, ra (ya, yab), rra, la, lla, va, sa, nukhta
+ddha    : ddha (ya, yab), ya, yab, ra, rra, lla, nukhta
+nna     : ka, ga, ta (ra, ya, yab), tta (ya, yab), dda (ra (ya, yab)), ddha, nna, pa, ba, ma, ya, yab, rra, lla, va 
+tha     : ka (ra),  kha, cha, ja, jha, tha (pha, ba, ya, yab, ra,va), ttha, na (ya, yab), pa (ra), pha, ba, bha, ma (ya, yab), ya, yab, ra (ya, yab), rra (ya, yab), la, lla, va, ca, sha, sa (na, pha, ya, yab, va), ksha
+ttha    : ttha (ya, yab), na, pa, ba, bha (ya, yab), ma, ya, yab, ra, rra, la, lla, va, ca, sa
+da      : ga (rra),gha, cha, ja,  da (ya, yab), dha (ya, yab, rra, va), na (ya, yab), pa, pha (ya, yab), ba (ra, rra), bha (ya, yab, rra), ma, ya, yab, ra (ya, yab), rra, la, lla, va (ya, yab, ra, rra)
+dha     : dha (ya, yab), na (ya, yab), ba, ma, ya, yab, ra (ya, yab), rra, lla, va
+na      : ka (ra), ga, cha, ja, dda (ra (ya, yab)), ta (ra), tha (ba, ya, yab, ra (ya, yab), va), ttha (ya, yab), da (ba, ra, va, ya, yab), dha (ya, yab, ra, rra), na (ya, yab), pa (ra), pha (ra), ba, bha, ma, ya, yab, ra, rra, la, va, ca, sha, sa (ta, pa, ya, yab), ha (ya, yab)
+nex : nex
+nas     : ka, kha, ga, gha, nga, cha, chha, ja, nja, ta, tta, dda, nna, tha , da, dha, na, pa, ba, bha, ma, ya, yab, zha,  va, ca, sha, sa, ha
+pa      : ka, cha (ya, yab), ta, tta, dda, ddha, nna, tha (ya, yab, va), dha (va), na, pa (ya, yab), pha, ma, ya, yab, ra (ya, yab), rra, la (ya, yab), lla, va, ca, sha, sa (va)
+pha     : ka, ga, gha, ja (nukhta), jha, ta, tha (va), nas, pha (ya, yab), ya, yab, ra, rra, la (ya, yab), lla, sa, nukhta (sa)
+ba      : ka, ja (nukhta), dda, tha, da, dha (va), na, ba (ya, yab), bha, ma, ya, yab, ra (ya, yab), rra, la (ya, yab), lla, va, sa, ddra
+bha     : ka, na, bha (ya, yab), ya, yab, ra, rra, la, lla, va
+ma      : ka, cha, chha, ja, ta, tha, da, na, pa (ya, yab, ra, rra), pha, ba (ya, yab, ra), bha (ra), ma (ya, yab), ya, yab, ra (ya, yab), rra, la, lla, va, ca, sa, ha
+ya      : ka (ka), ga, nga, cha, ta, dda, tha, da, na, pa, ba, ya, yab, ra (ya, yab), la, va, sa
+yab     : ka, ya, yab
+ra     : ka (ya, yab, sa), kha, ga (ya, yab, sa), gha(ga, ya, yab, sa), nga (ja), cha (cha, chha, ya, yab), chha, ja (ja, ya, yab, nukhta), jnya, jha, ta (sa), tta (sa), dda (sa), ddha (sa, nukhta (ya)), nna (nna (ya, yab), ya, yab), tha (tha (ya, ra), ma, ya, yab, ra, sa), ttha (ya, yab) 
+rex    : da (da (ba), dha (ba), ba, ya, yab, ra, va), dha (na, ba, ya, yab, va), na (sa), pa (ya, yab, ra, sa, ha), pha (ya, yab, sa, ha), ba (ya, yab, sa, ha), bha (sa), ma (ma, ya, yab, sa), ya (ya, yab), yab (ya, yab), ra (ya, yab), la (ya, yab, la, dda, sa), va (ya, yab, sa, ha) 
+rxl : ca (ba, ya, yab, va), sha (ka,ta, nna,ya, yab), sa (ta,ttha), ha, ksha (ya, yab, va)
+rxxl : rxxl
+rra     : ka, kha, ga, gha, nga, cha, chha, ja, nja, ta, tta, dda, nna, tha, ttha, da, dha, na, pa, ba, bha, ma, ya, yab, ra, rra (ya, yab) la, lla, va, ca, sha, sa, ha
+la      : ka (sa), ga, cha, chha, ja, jha, ta (ra), tta, dda, tha, ttha, da (va, ba), na, pa (ya, yab), pha, ba, bha (ya, yab, ra), ma (ya, yab), ya, yab, rra, la (ya, yab), lla, va, sa, ha (ya, yab)
+lla     : ka, kha, ga, gha, nga, cha, chha, ja, ta, tta, dda, nna, tha, ttha, da, dha, na, pa, ba, bha, ma, ya, yab, rra, la, lla (ya, yab), va, ca, sha, sa, ha
+zha     : ka, kha, ga, gha, nga, cha, chha, ja, nja, ta, tta, dda, nna, tha (tha), da, dha, na, pa, ba, bha, ma, ya, yab, zha, va, ca, sha, sa, ha
+va      : ka, tha, na, ya, yab, ra (ya, yab), rra, la, lla, va (ya, yab), ha
+ca      : ka (ba, ya, yab, ra, va), kha, cha (ya, yab), chha, nja, tha, na, ba (ya, yab), ma, ya, yab, ra (ya, yab), rra (ya, yab), la, va (ya, yab), lla, ca (pa, ba, ya, yab)
+sha     : ka (ba, ya, yab, ra, va), ta (ya, yab, ra, va), tta (ya, yab, ra, va), nna (ya, yab), na, pa (ra), pha, ba (ya, yab), ma (ya, yab), ya, yab, ra, rra (ya, yab) lla, va (ya, yab), sha (ya, yab)
+sa      : ka (ba, ya, yab, ra, rra, va), kha, ga (ya, yab, ra), gha (ya, yab, ra), ja, ta (ya, yab, ra (ya, yab)),  tta, tha (ya, yab, ra, va), ttha (ya, yab), na (ya, yab), pa (ra), pha, ba (ya, yab), ma, ya, yab, ra, rra (ya, yab) la, lla, va, sa (ttha, ya, yab, va)
+ha      : ka, nna, tha, na (ya, yab), ba, ma, ya, yab, ra, rra, la, lla, va, ha (ya, yab)
+ddra    : ya, yab
+ddrha	: ya, yab
+ksha	: nna, tha, na, pa, ma, ya, yab, rra, la, va, ksha
+jnya	: ya, yab
+qa 	:  qa
+xa 	:  xa
+gga	:  gga
+za	:  za
+fa	: fa
+cca	: cca
+vedic    : ka, cha, ta, tha, pa, ya, yab, ra, la, va, ca, sha, sa, ha
+nukhta   : nukhta

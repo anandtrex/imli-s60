@@ -1,0 +1,61 @@
+########################
+#file : generic.con.resorted
+#desc : generic.con has been resorted following the iscii and the unicode standards. extra spaces have been left for consonants na and ra so that additions can be made. changes are indicated in hashes alongside the consonants.
+#author : indrani
+#date modified : April 8, 2007
+########################
+
+ka      1       
+kha     2       
+ga      3       
+gha     4       
+nga     5       
+cha     6       
+chha    7       
+ja      8       
+jha     9       
+nja     10      
+ta      11      
+tta     12      
+dda     13      
+ddha    14      
+nna     15      
+tha     16      
+ttha    17      
+da      18      
+dha     19      
+na      20      
+nex     21     	#additional space for na#
+nas     22      #tamil na moved up#
+pa      23      
+pha     24      
+ba      25      
+bha     26      
+ma      27      
+ya      28      
+yab     29     	#ya for bangla, oriya and asamiya, no changes#
+ra      30          
+rex     31	#first additional space for ra#
+rxl     32 	#second additional space for ra#	
+rxxl    33	#third additional space for ra#
+rra     34	#ra marathi, kannada, moved up#
+la      35       
+lla	36	#hard la moved up# 
+zha 	37    	#retroflex la tamil and malayalam#
+va      38       
+ca      39      
+sha     40      
+sa      41      
+ha      42       
+ddra	43   	 #moved from earlier position 16# 
+ddrha	44	 #moved from earlier position 18#	
+ksha	45	 #moved from earlier position 2#
+jnya	46	 #moved from earlier position 10#
+qa	47	 #added for ka plus nukhta#
+xa	48	 #added for kha plus nukhta#
+gga	49	 #added for ga plus nukhta#
+za	50	 #added for ja plus nukhta#
+fa	51	 #added for pha plus nukhta#
+cca	52	 #added for ca plus nukhta oriya#
+vedic   53     
+nukhta  54	

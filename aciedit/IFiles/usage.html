@@ -1,0 +1,1410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="AsciiDoc 8.2.5" />
+<style type="text/css">
+/* Debug borders */
+p, li, dt, dd, div, pre, h1, h2, h3, h4, h5, h6 {
+/*
+  border: 1px solid red;
+*/
+}
+
+body {
+  margin: 1em 5% 1em 5%;
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
+}
+a:visited {
+  color: fuchsia;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+tt {
+  color: navy;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #527bbd;
+  font-family: sans-serif;
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+  line-height: 1.3;
+}
+
+h1, h2, h3 {
+  border-bottom: 2px solid silver;
+}
+h2 {
+  padding-top: 0.5em;
+}
+h3 {
+  float: left;
+}
+h3 + * {
+  clear: left;
+}
+
+div.sectionbody {
+  font-family: serif;
+  margin-left: 0;
+}
+
+hr {
+  border: 1px solid silver;
+}
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+pre {
+  padding: 0;
+  margin: 0;
+}
+
+span#author {
+  color: #527bbd;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+span#email {
+}
+span#revision {
+  font-family: sans-serif;
+}
+
+div#footer {
+  font-family: sans-serif;
+  font-size: small;
+  border-top: 2px solid silver;
+  padding-top: 0.5em;
+  margin-top: 4.0em;
+}
+div#footer-text {
+  float: left;
+  padding-bottom: 0.5em;
+}
+div#footer-badges {
+  float: right;
+  padding-bottom: 0.5em;
+}
+
+div#preamble,
+div.tableblock, div.imageblock, div.exampleblock, div.verseblock,
+div.quoteblock, div.literalblock, div.listingblock, div.sidebarblock,
+div.admonitionblock {
+  margin-right: 10%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+div.admonitionblock {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+
+div.content { /* Block element content. */
+  padding: 0;
+}
+
+/* Block element titles. */
+div.title, caption.title {
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 1.0em;
+  margin-bottom: 0.5em;
+}
+div.title + * {
+  margin-top: 0;
+}
+
+td div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content + div.title {
+  margin-top: 0.0em;
+}
+
+div.sidebarblock > div.content {
+  background: #ffffee;
+  border: 1px solid silver;
+  padding: 0.5em;
+}
+
+div.listingblock {
+  margin-right: 0%;
+}
+div.listingblock > div.content {
+  border: 1px solid silver;
+  background: #f4f4f4;
+  padding: 0.5em;
+}
+
+div.quoteblock > div.content {
+  padding-left: 2.0em;
+}
+
+div.attribution {
+  text-align: right;
+}
+div.verseblock + div.attribution {
+  text-align: left;
+}
+
+div.admonitionblock .icon {
+  vertical-align: top;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #527bbd;
+  padding-right: 0.5em;
+}
+div.admonitionblock td.content {
+  padding-left: 0.5em;
+  border-left: 2px solid silver;
+}
+
+div.exampleblock > div.content {
+  border-left: 2px solid silver;
+  padding: 0.5em;
+}
+
+div.verseblock div.content {
+  white-space: pre;
+}
+
+div.imageblock div.content { padding-left: 0; }
+div.imageblock img { border: 1px solid silver; }
+span.image img { border-style: none; }
+
+dl {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+dt {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  font-style: italic;
+}
+dd > *:first-child {
+  margin-top: 0;
+}
+
+ul, ol {
+    list-style-position: outside;
+}
+div.olist2 ol {
+  list-style-type: lower-alpha;
+}
+
+div.tableblock > table {
+  border: 3px solid #527bbd;
+}
+thead {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+tfoot {
+  font-weight: bold;
+}
+
+div.hlist {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+div.hlist td {
+  padding-bottom: 5px;
+}
+td.hlist1 {
+  vertical-align: top;
+  font-style: italic;
+  padding-right: 0.8em;
+}
+td.hlist2 {
+  vertical-align: top;
+}
+
+@media print {
+  div#footer-badges { display: none; }
+}
+
+div#toctitle {
+  color: #527bbd;
+  font-family: sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 1.0em;
+  margin-bottom: 0.1em;
+}
+
+div.toclevel1, div.toclevel2, div.toclevel3, div.toclevel4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+div.toclevel2 {
+  margin-left: 2em;
+  font-size: 0.9em;
+}
+div.toclevel3 {
+  margin-left: 4em;
+  font-size: 0.9em;
+}
+div.toclevel4 {
+  margin-left: 6em;
+  font-size: 0.9em;
+}
+/* Workarounds for IE6's broken and incomplete CSS2. */
+
+div.sidebar-content {
+  background: #ffffee;
+  border: 1px solid silver;
+  padding: 0.5em;
+}
+div.sidebar-title, div.image-title {
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 0.0em;
+  margin-bottom: 0.5em;
+}
+
+div.listingblock div.content {
+  border: 1px solid silver;
+  background: #f4f4f4;
+  padding: 0.5em;
+}
+
+div.quoteblock-content {
+  padding-left: 2.0em;
+}
+
+div.exampleblock-content {
+  border-left: 2px solid silver;
+  padding-left: 0.5em;
+}
+
+/* IE6 sets dynamically generated links as visited. */
+div#toc a:visited { color: blue; }
+</style>
+<title>Acharya Multilingual Editor v1.0 - User's Manual</title>
+</head>
+<body>
+<div id="header">
+<h1>Acharya Multilingual Editor v1.0 - User's Manual</h1>
+</div>
+<div id="preamble">
+<div class="sectionbody">
+<div class="para"><p>v1.0 (build 24), October 2007</p></div>
+</div>
+</div>
+<h2 id="_general_information">General Information</h2>
+<div class="sectionbody">
+<div class="para"><div class="title">Website</div><p>This software is part of the <a href="http://acharya.iitm.ac.in"><strong>Acharya</strong></a>
+project. Development happens on Sourceforge. The sourceforge project
+page is at <a href="http://sf.net/projects/imli">http://sf.net/projects/imli</a></p></div>
+<div class="para"><div class="title">License</div><p>This software is covered by the GNU General Public License version 2.</p></div>
+</div>
+<h2 id="_menu_commands">Menu Commands</h2>
+<div class="sectionbody">
+<div class="vlist"><div class="title">File</div><dl>
+<dt>
+New
+</dt>
+<dd>
+<p>
+        Creates a new document in a separate tab for editing.
+</p>
+</dd>
+<dt>
+Open
+</dt>
+<dd>
+<p>
+        Opens a saved document in a separate tab for editing.
+</p>
+</dd>
+<dt>
+Recent Files
+</dt>
+<dd>
+<p>
+       Shows a list of recently opened documents for easy access. The
+       "Clear History" menu item can be used to clear this list.
+</p>
+</dd>
+<dt>
+Close
+</dt>
+<dd>
+<p>
+        Closes the currently active document. If it has unsaved changes the user is
+prompted to either save or discard the changes.
+</p>
+</dd>
+<dt>
+Save
+</dt>
+<dd>
+<p>
+       Save the current document in the <strong>ISCII</strong> 7-bit encoding. The
+       file name is asked only for newly created documents. Subsequent
+       saves will simply overwrite the file.
+</p>
+</dd>
+<dt>
+Save As
+</dt>
+<dd>
+<p>
+     Save the current document under a different name. The file name
+is asked every time.
+</p>
+</dd>
+<dt>
+Save Unicode Text As
+</dt>
+<dd>
+<p>
+        Generates a unicode text file using the utf8 encoding that can be used with other unicode aware applications.
+</p>
+</dd>
+<dt>
+Save PDF As
+</dt>
+<dd>
+<p>
+        Generates a PDF file that can be opened by Acrobat Reader or Foxit Reader.
+</p>
+</dd>
+<dt>
+Save RTF As
+</dt>
+<dd>
+<p>
+       Generates a richtext document equivalent of the currently
+       active document. The primary purpose of this is to allow text
+       to be imported into word processors for typesetting local
+       language scripts. NOTE: To be useful, the RTF file also needs
+       the ISFOC fonts that are currently used by the editor.
+</p>
+</dd>
+<dt>
+Print Preview
+</dt>
+<dd>
+<p>
+        Shows a preview of the currently active document.
+</p>
+</dd>
+<dt>
+Print
+</dt>
+<dd>
+<p>
+        Print the currently active document. Pops up the system print dialog using which the user can set various options.
+</p>
+</dd>
+<dt>
+Exit
+</dt>
+<dd>
+<p>
+        Closes the application. For each unsaved document, the user is prompted to either save or discard the changes.
+</p>
+</dd>
+</dl></div>
+<div class="vlist"><div class="title">Edit</div><dl>
+<dt>
+Undo
+</dt>
+<dd>
+<p>
+        Undoes the last editing operation. Currently, only a simple
+        undo mechanism is available. It can undo only one deletion and
+        that too only immediately after the deletion.
+</p>
+</dd>
+<dt>
+Cut
+</dt>
+<dd>
+<p>
+        Removes the currently selected region of text and places it in the system clipboard and the internal clipboard.
+</p>
+</dd>
+<dt>
+Copy
+</dt>
+<dd>
+<p>
+        Unlike cut, this command does not remove but only copies the currently selected region of text to the clipboards.
+</p>
+</dd>
+<dt>
+Paste
+</dt>
+<dd>
+<p>
+        Inserts, at the current cursor position, the text that was sent to the internal clipboard by either the cut or copy commands. An interesting property of this command is that the text is always inserted in the currently active language.
+So, transliteration can be done by simply copying the text, changing the language and pasting it back.
+</p>
+</dd>
+<dt>
+Paste As ASCII
+</dt>
+<dd>
+<p>
+      Inserts, at the current cursor position, the text that was sent to the system clipboard by not just this application but any other application.  The text is always in the english language using the ASCII encoding. This command is useful for copying english data
+from other applications.
+</p>
+</dd>
+<dt>
+Clear
+</dt>
+<dd>
+<p>
+     Removes the selected text from the document. The removed text cannot be pasted back.
+</p>
+</dd>
+<dt>
+Select All
+</dt>
+<dd>
+<p>
+       A convenience command for selecting the entire document.
+</p>
+</dd>
+<dt>
+Select Block
+</dt>
+<dd>
+<p>
+       A convenience command for selecting the current text block (paragraph).
+</p>
+</dd>
+</dl></div>
+<div class="vlist"><div class="title">Search</div><dl>
+<dt>
+Find&#8230;
+</dt>
+<dd>
+<p>
+     Activates the text finder just below the document area. This can
+     be removed either by pressing the &lt;ESC&gt; key or by clicking the
+     close button to the left of the find text box.
+</p>
+</dd>
+<dt>
+Find Next
+</dt>
+<dd>
+<p>
+     Find the next occurrance of the word typed into the find text box
+     starting the from the current cursor position.
+</p>
+</dd>
+<dt>
+Find Previous
+</dt>
+<dd>
+<p>
+     Find the previous occurrance of the word typed into the find text box
+     starting the from the current cursor position.
+</p>
+</dd>
+</dl></div>
+<div class="vlist"><div class="title">View</div><dl>
+<dt>
+Show Keyboard
+</dt>
+<dd>
+<p>
+     Displays an onscreen keyboard reflecting the currently selected
+     key input method for the currently selected script.
+</p>
+</dd>
+<dt>
+Increase Text Size
+</dt>
+<dd>
+<p>
+     Increase the text size of the active document by 2 points upon each invocation.
+</p>
+</dd>
+<dt>
+Decrease Text Size
+</dt>
+<dd>
+<p>
+     Reduce the text size of the active document by 2 points upon each invocation.
+</p>
+</dd>
+<dt>
+UI Themes
+</dt>
+<dd>
+<p>
+     A selection of widget appearance themes.
+</p>
+</dd>
+<dt>
+Show Statistics
+</dt>
+<dd>
+<p>
+     When enabled, displays the word count of the currently active document.
+</p>
+</dd>
+</dl></div>
+<div class="vlist"><div class="title">Tools</div><dl>
+<dt>
+Dictionary-&gt;Load
+</dt>
+<dd>
+<p>
+    Prompt the user for a filename and load all words from the selected document into the dictionary. Currently disabled. The user can however open the document and index the document using &lt;Ctrl&gt;+&lt;F8&gt; shortcut.
+</p>
+</dd>
+<dt>
+Dictionary-&gt;Clear
+</dt>
+<dd>
+<p>
+    Empty the contents of the dictionary. Note: once cleared, auto completion will not work untill the dictionary is loaded
+</p>
+</dd>
+<dt>
+Dictionary-&gt;Index Document
+</dt>
+<dd>
+<p>
+    Load all the words of the document in the currently active tab into the dictionary. This is also activated by the shortcut &lt;Ctrl&gt;+&lt;F8&gt;.
+</p>
+</dd>
+<dt>
+Show Completions
+</dt>
+<dd>
+<p>
+    Presents a list of known completions to the word typed upto the cursor. It can also be activated using the shortcut &lt;Ctrl&gt;+&lt;Space&gt;. &lt;Escape&gt; removes the completion list.
+</p>
+</dd>
+</dl></div>
+<div class="vlist"><div class="title">Help</div><dl>
+<dt>
+Usage
+</dt>
+<dd>
+<p>
+        Opens a new document tab and displays this file.
+</p>
+</dd>
+<dt>
+About
+</dt>
+<dd>
+<p>
+        About this software.
+</p>
+</dd>
+<dt>
+About QT
+</dt>
+<dd>
+<p>
+        About the QT Toolkit which this software uses.
+</p>
+</dd>
+</dl></div>
+</div>
+<h2 id="_phonetic_keymap_layout">Phonetic Keymap Layout</h2>
+<div class="sectionbody">
+<div class="para"><p>The following sections show the layout of the phonetic keyboard. The keys are
+highlighted in bold.</p></div>
+<h3 id="_common_mapping">Common Mapping</h3><div style="clear:left"></div>
+<div class="tableblock">
+<table rules="none"
+frame="hsides"
+cellspacing="0" cellpadding="4">
+<caption class="title">Table: Vowels</caption>
+<col width="217" />
+<col width="91" />
+<thead>
+  <tr>
+    <th align="left">
+    Vowel
+    </th>
+    <th align="left">
+    Key
+    </th>
+  </tr>
+</thead>
+<tbody valign="top">
+  <tr>
+    <td align="left">
+    a
+    </td>
+    <td align="left">
+    a
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    aa
+    </td>
+    <td align="left">
+    A
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    i
+    </td>
+    <td align="left">
+    i
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    ii
+    </td>
+    <td align="left">
+    I
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    u
+    </td>
+    <td align="left">
+    u
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    uu
+    </td>
+    <td align="left">
+    U
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    e
+    </td>
+    <td align="left">
+    e
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    ee (S.I)
+    </td>
+    <td align="left">
+    E
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    ay (N.I)
+    </td>
+    <td align="left">
+    E
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    ay  (S.I)
+    </td>
+    <td align="left">
+    w
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    chandra e (N.I)
+    </td>
+    <td align="left">
+    w
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    o
+    </td>
+    <td align="left">
+    o
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    oo(S.I)
+    </td>
+    <td align="left">
+    O
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    au(N.I)
+    </td>
+    <td align="left">
+    O
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    au (S.I)
+    </td>
+    <td align="left">
+    W
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    chandra o (N.I)
+    </td>
+    <td align="left">
+    W
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    am
+    </td>
+    <td align="left">
+    @
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    aha
+    </td>
+    <td align="left">
+    #
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    ri/ru
+    </td>
+    <td align="left">
+    !
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<div class="tableblock">
+<table rules="none"
+frame="hsides"
+cellspacing="0" cellpadding="4">
+<caption class="title">Table: Misc</caption>
+<col width="205" />
+<col width="102" />
+<thead>
+  <tr>
+    <th align="left">
+    Char
+    </th>
+    <th align="left">
+    Key
+    </th>
+  </tr>
+</thead>
+<tbody valign="top">
+  <tr>
+    <td align="left">
+    halant
+    </td>
+    <td align="left">
+    q
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    pollo
+    </td>
+    <td align="left">
+    q
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    chandrakala
+    </td>
+    <td align="left">
+    q
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    cbindu
+    </td>
+    <td align="left">
+    "
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    avagraha
+    </td>
+    <td align="left">
+    {
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    viram
+    </td>
+    <td align="left">
+    &gt;
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<div class="tableblock">
+<table rules="none"
+frame="hsides"
+cellspacing="0" cellpadding="4">
+<caption class="title">Table: Consonants</caption>
+<col width="205" />
+<col width="102" />
+<thead>
+  <tr>
+    <th align="left">
+    Consonant
+    </th>
+    <th align="left">
+    Key
+    </th>
+  </tr>
+</thead>
+<tbody valign="top">
+  <tr>
+    <td align="left">
+    ka
+    </td>
+    <td align="left">
+    k
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    kha
+    </td>
+    <td align="left">
+    K
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    ga
+    </td>
+    <td align="left">
+    g
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    gha
+    </td>
+    <td align="left">
+    G
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    nga
+    </td>
+    <td align="left">
+    H
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    cha
+    </td>
+    <td align="left">
+    c
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    chha
+    </td>
+    <td align="left">
+    C
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    ja
+    </td>
+    <td align="left">
+    j
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    jha
+    </td>
+    <td align="left">
+    J
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    nya
+    </td>
+    <td align="left">
+    M
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    Ta
+    </td>
+    <td align="left">
+    z
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    Tha
+    </td>
+    <td align="left">
+    Z
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    d
+    </td>
+    <td align="left">
+    f
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    Dha
+    </td>
+    <td align="left">
+    F
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    Na
+    </td>
+    <td align="left">
+    N
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    ta
+    </td>
+    <td align="left">
+    t
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    tha
+    </td>
+    <td align="left">
+    T
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    da
+    </td>
+    <td align="left">
+    d
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    dha
+    </td>
+    <td align="left">
+    D
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    na
+    </td>
+    <td align="left">
+    n
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    pa
+    </td>
+    <td align="left">
+    p
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    pha
+    </td>
+    <td align="left">
+    P
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    ba
+    </td>
+    <td align="left">
+    b
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    bha
+    </td>
+    <td align="left">
+    B
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    ma
+    </td>
+    <td align="left">
+    m
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    ya
+    </td>
+    <td align="left">
+    y
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    ra
+    </td>
+    <td align="left">
+    r
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    l
+    </td>
+    <td align="left">
+    l
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    wa
+    </td>
+    <td align="left">
+    v
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    sha
+    </td>
+    <td align="left">
+    S
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    Sha
+    </td>
+    <td align="left">
+    x
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    sa
+    </td>
+    <td align="left">
+    s
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    ha
+    </td>
+    <td align="left">
+    h
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    ksha
+    </td>
+    <td align="left">
+    X
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    gya/dnya
+    </td>
+    <td align="left">
+    ]
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    Ra
+    </td>
+    <td align="left">
+    R
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    Rha
+    </td>
+    <td align="left">
+    V
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    lla
+    </td>
+    <td align="left">
+    L
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">To get the nukhta under the consonant, type the consonant followed by <tt>&lt;SHIFT&gt;+q</tt></td>
+</tr></table>
+</div>
+<h3 id="_language_specific_re_mapping">Language Specific (Re)Mapping</h3><div style="clear:left"></div>
+<h4 id="_asamiya_bangla">Asamiya/Bangla</h4>
+<div class="tableblock">
+<table rules="none"
+frame="hsides"
+cellspacing="0" cellpadding="4">
+<col width="194" />
+<col width="160" />
+<thead>
+  <tr>
+    <th align="left">
+    Consonant
+    </th>
+    <th align="left">
+    Key
+    </th>
+  </tr>
+</thead>
+<tbody valign="top">
+  <tr>
+    <td align="left">
+    antasta ja
+    </td>
+    <td align="left">
+    y
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    antasta ya
+    </td>
+    <td align="left">
+    Y
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    khanda ta
+    </td>
+    <td align="left">
+    <tt>t+&lt;ALT&gt;+q</tt>
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<h4 id="_marathi">Marathi</h4>
+<div class="tableblock">
+<table rules="none"
+frame="hsides"
+cellspacing="0" cellpadding="4">
+<col width="194" />
+<col width="171" />
+<thead>
+  <tr>
+    <th align="left">
+    Char
+    </th>
+    <th align="left">
+    Key
+    </th>
+  </tr>
+</thead>
+<tbody valign="top">
+  <tr>
+    <td align="left">
+    eyelash r
+    </td>
+    <td align="left">
+    R
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    chandra + a
+    </td>
+    <td align="left">
+    ~
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<h4 id="_kannada">Kannada</h4>
+<div class="tableblock">
+<table rules="none"
+frame="hsides"
+cellspacing="0" cellpadding="4">
+<col width="194" />
+<col width="171" />
+<thead>
+  <tr>
+    <th align="left">
+    Char
+    </th>
+    <th align="left">
+    Key
+    </th>
+  </tr>
+</thead>
+<tbody valign="top">
+  <tr>
+    <td align="left">
+    special ra
+    </td>
+    <td align="left">
+    R
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<h4 id="_malayalam_amp_tamil">Malayalam &amp; Tamil</h4>
+<div class="tableblock">
+<table rules="none"
+frame="hsides"
+cellspacing="0" cellpadding="4">
+<col width="194" />
+<col width="171" />
+<thead>
+  <tr>
+    <th align="left">
+    Char
+    </th>
+    <th align="left">
+    Key
+    </th>
+  </tr>
+</thead>
+<tbody valign="top">
+  <tr>
+    <td align="left">
+    rra
+    </td>
+    <td align="left">
+    R
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    zha
+    </td>
+    <td align="left">
+    [
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    nna
+    </td>
+    <td align="left">
+    ]
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<h4 id="_telugu">Telugu</h4>
+<div class="tableblock">
+<table rules="none"
+frame="hsides"
+cellspacing="0" cellpadding="4">
+<col width="194" />
+<col width="171" />
+<thead>
+  <tr>
+    <th align="left">
+    Char
+    </th>
+    <th align="left">
+    Key
+    </th>
+  </tr>
+</thead>
+<tbody valign="top">
+  <tr>
+    <td align="left">
+    bandi ra
+    </td>
+    <td align="left">
+    R
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2008-06-06 21:09:29 India Standard Time
+</div>
+</div>
+</body>
+</html>
