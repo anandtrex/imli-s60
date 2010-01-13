@@ -1,0 +1,4 @@
+xcopy C:\S60\devices\S60_5th_Edition_SDK_v1.0\epoc32\release\gcce\udeb\libimli.dll C:\Symbian\Carbide\workspace\aciedit\IFiles /y /e /f
+xcopy C:\S60\devices\S60_5th_Edition_SDK_v1.0\epoc32\BUILD\Symbian\Carbide\workspace\libimli\group\LIBIMLI\GCCE\udeb\libimli.dll C:\Symbian\Carbide\workspace\aciedit /y /e /f
+xcopy C:\S60\devices\S60_5th_Edition_SDK_v1.0\epoc32\BUILD\Symbian\Carbide\workspace\libimli\group\LIBIMLI\GCCE\udeb\libimli{000a0000}.dso C:\Symbian\Carbide\workspace\aciedit /y /e /f
+xcopy C:\S60\devices\S60_5th_Edition_SDK_v1.0\epoc32\BUILD\Symbian\Carbide\workspace\libimli\group\LIBIMLI\GCCE\udeb\libimli{000a0000}.dso C:\S60\devices\S60_5th_Edition_SDK_v1.0\epoc32\release\armv5\lib\libimli.dso /y /e /f

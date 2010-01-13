@@ -1,0 +1,17 @@
+/*
+============================================================================
+ Name		: bld.inf
+ Author	  : 
+ Copyright   : Your copyright notice
+ Description : This file provides the information required for building the
+				whole of a libimli.
+============================================================================
+*/
+
+PRJ_PLATFORMS
+DEFAULT GCCE WINSCW
+
+PRJ_EXPORTS
+
+PRJ_MMPFILES
+libimli.mmp
